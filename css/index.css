@@ -1,0 +1,60 @@
+#header{
+    height: 120px;
+    width: 100%;
+}
+#header div{
+    Float: left;
+    width: 33%;
+    text-align: center;
+}
+#header div img{
+    margin-top: 0px;
+}
+#header div div{
+    margin-top: 27px;
+}
+#header div div a{
+    color: black;
+    font-weight: bold;
+    text-decoration-line: none;
+}
+#main_picture{
+    height: 464px;
+}
+.icon_title_text{
+    text-align: center;
+}
+.icon_box{
+    width: 1240px;
+    text-align: center;
+    margin: 0 auto;
+}
+.icon_box div{
+    float: left;
+}
+.icon_box p{
+    width: 250px;
+    word-wrap: break-word;
+    margin: auto;
+    padding: 0;
+}
+.chefs{
+    width: 100%;
+    height: 304px;
+    background-color: lightblue;
+}
+.chefs div{
+    width: 814px;
+    height: 304px;
+    margin: auto;
+}
+.chefs div p{
+    width: 500px;
+    height: 100px;
+    float: left;
+}
+
+a:hover{
+    color: red;
+    
+}
