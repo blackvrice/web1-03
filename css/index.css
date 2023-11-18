@@ -31,12 +31,16 @@
 }
 .icon_box div{
     float: left;
+    height: 200px;
+    margin: 10px;
 }
 .icon_box p{
     width: 250px;
+    height: 125px;
     word-wrap: break-word;
     margin: auto;
     padding: 0;
+    border-bottom: 5px dotted gray;
 }
 .chefs{
     width: 100%;
@@ -52,9 +56,9 @@
     width: 500px;
     height: 100px;
     float: left;
+    margin: 50px 10px;
 }
 
 a:hover{
     color: red;
-    
 }

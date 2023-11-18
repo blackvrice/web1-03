@@ -1,0 +1,83 @@
+#top{
+    width: 1000px;
+    height: 500px;
+    margin: 0px 15% ;
+}
+.top_left{
+    width: 750px;
+    height: 500px;
+    float: left;
+}
+.top_right{
+    width: 250px;
+    height: 500px;
+}
+#boxDiv{
+    width: 250px;
+    height: 250px;
+    top: 258px;
+    position: absolute;
+    background: rgba(0, 128, 0, 0.5)
+}
+#top_box{
+    width: 210px;
+    height: 210px;
+    color: white;
+    font-style: inherit;
+}
+#box_all{
+    width: 1000px;
+    height: 500px;
+    margin: 0px 15% ;
+}
+.box_left{
+    width: 750px;
+    height: 500px;
+    float: left;
+}
+#rightDiv{
+    width: 250px;
+    height: 500px;
+    background:gold;
+    float: left;
+}
+.box_right{
+    width: 210px;
+    height: 460px;
+}
+.box{
+    width: 210px;
+    height: 210px;
+}
+.odd{
+    width: 250px;
+    height: 250px;
+    background: firebrick;
+    float: left;
+}
+.even{
+    width: 250px;
+    height: 250px;
+    background: orange;
+    float: left;
+}
+#footer{
+    width: 1000px;
+    margin: 0px 15%;
+    background: pink;
+}
+.f_left{
+    background:gray;
+    width: 750px;
+    height: 40px;
+}
+.f_left table thead th{
+    padding: 7px;
+    text-align: center;
+    border-right: 1px solid peru;
+}
+.f_left table thead #thEnd{
+    padding: 7px;
+    text-align: center;
+    border-right: 0px;
+}
