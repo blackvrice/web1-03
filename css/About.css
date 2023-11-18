@@ -1,82 +1,105 @@
-#top{
+#top {
     width: 1000px;
     height: 500px;
-    margin: 0px 15% ;
+    margin: 0px 15%;
 }
-.top_left{
+
+.top_left {
     width: 750px;
     height: 500px;
     float: left;
 }
-.top_right{
+
+.top_right {
     width: 250px;
     height: 500px;
 }
-#boxDiv{
+
+#boxDiv {
     width: 250px;
     height: 250px;
     top: 258px;
     position: absolute;
     background: rgba(0, 128, 0, 0.5)
 }
-#top_box{
+
+#top_box {
     width: 210px;
     height: 210px;
     color: white;
     font-style: inherit;
 }
-#box_all{
+
+#box_all {
     width: 1000px;
     height: 500px;
-    margin: 0px 15% ;
+    margin: 0px 15%;
 }
-.box_left{
+
+.box_left {
     width: 750px;
     height: 500px;
     float: left;
 }
-#rightDiv{
+
+#rightDiv {
     width: 250px;
     height: 500px;
-    background:gold;
+    background: gold;
     float: left;
 }
-.box_right{
+
+.box_right {
     width: 210px;
     height: 460px;
 }
-.box{
+
+.box {
     width: 210px;
     height: 210px;
+    text-align: center;
+    margin: auto;
 }
-.odd{
+.box h2{
+    margin: 10px;
+}
+.box p{
+    margin: 10px;
+}
+
+.odd {
     width: 250px;
     height: 250px;
     background: firebrick;
     float: left;
 }
-.even{
+
+.even {
     width: 250px;
     height: 250px;
     background: orange;
     float: left;
 }
-#footer{
+
+#footer {
     width: 1000px;
     margin: 0px 15%;
     background: pink;
 }
-.f_left{
-    background:gray;
+
+.f_left {
+    background: gray;
     width: 750px;
     height: 40px;
 }
-.f_left table thead th{
+
+.f_left table thead th {
     padding: 7px;
     text-align: center;
     border-right: 1px solid peru;
 }
-.f_left table thead #thEnd{
+
+.f_left table thead #thEnd {
     padding: 7px;
     text-align: center;
     border-right: 0px;

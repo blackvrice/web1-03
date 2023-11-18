@@ -24,9 +24,13 @@
 }
 #main_picture{
     height: 464px;
+    text-align: center;
 }
 .icon_title_text{
     text-align: center;
+}
+.icon_title_text strong{
+    font-size: large;
 }
 .icon_box{
     width: 1240px;
