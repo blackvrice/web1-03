@@ -18,6 +18,10 @@
     font-weight: bold;
     text-decoration-line: none;
 }
+#header div div a:hover{
+    color: red;
+    text-decoration-line: underline;
+}
 #main_picture{
     height: 464px;
 }
@@ -57,8 +61,4 @@
     height: 100px;
     float: left;
     margin: 50px 10px;
-}
-
-a:hover{
-    color: red;
 }
