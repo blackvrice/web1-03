@@ -2,23 +2,20 @@
     height: 120px;
     width: 100%;
 }
-#header div{
-    Float: left;
-    width: 33%;
+#header table{
+    margin: auto;
+}
+#header td{
+    width: 13%;
     text-align: center;
 }
-#header div img{
-    margin-top: 0px;
-}
-#header div div{
-    margin-top: 27px;
-}
-#header div div a{
+
+#header td a{
     color: black;
     font-weight: bold;
     text-decoration-line: none;
 }
-#header div div a:hover{
+#header td a:hover{
     color: red;
     text-decoration-line: underline;
 }
