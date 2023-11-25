@@ -14,18 +14,16 @@
     width: 250px;
     height: 500px;
 }
-
-#boxDiv {
-    top: 258px;
-    position: absolute;
-    background: rgba(0, 128, 0, 0.5)
-}
 #top_box {
     width: 210px;
     height: 210px;
     color: white;
     font-style: inherit;
-    margin: 20px;
+    margin-top:-250px;
+    margin-left: -750px;
+    padding: 20px;
+    background: rgba(0, 128, 0, 0.5);
+    float: left;
 }
 
 #box_all {

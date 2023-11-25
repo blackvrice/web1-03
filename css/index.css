@@ -1,22 +1,17 @@
 #header{
     height: 120px;
     width: 100%;
-}
-#header table{
-    margin: auto;
+    text-align: center;
     margin-top: 33px;
 }
-#header td{
-    width: 13%;
-    text-align: center;
-}
 
-#header td a{
+#header a{
+    margin: 25px;
     color: black;
     font-weight: bold;
     text-decoration-line: none;
 }
-#header td a:hover{
+#header a:hover{
     color: red;
     text-decoration-line: underline;
 }
