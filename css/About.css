@@ -13,16 +13,19 @@
 .top_right {
     width: 250px;
     height: 500px;
+    float: left;
+}
+.top_right img{
+    float: left;
 }
 #top_box {
     width: 210px;
     height: 210px;
     color: white;
     font-style: inherit;
-    margin-top:-250px;
-    margin-left: -750px;
     padding: 20px;
     background: rgba(0, 128, 0, 0.5);
+    margin-top: -250px;
     float: left;
 }
 
@@ -85,13 +88,14 @@
     height: 40px;
 }
 
-.f_left table thead th {
+.f_left div {
     padding: 7px;
     text-align: center;
     border-right: 1px solid peru;
+    float: left;
 }
 
-.f_left table thead #thEnd {
+.f_left #thEnd {
     padding: 7px;
     text-align: center;
     border-right: 0px;
