@@ -6,6 +6,9 @@
     height: 590px;
     color: white;
 }
+header{
+    position: relative;
+}
 
 #main p{
     font-size: 25px;

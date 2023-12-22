@@ -21,4 +21,5 @@ article{
 article p{
     position: absolute;
     color: white;
+    margin:auto;
 }
