@@ -1,0 +1,24 @@
+header{
+    position: fixed;
+    top: 0px;
+    height: 120px;
+    z-index: 1;
+}
+section{
+    position: relative;
+    top: 120px;
+    margin: auto;
+    width: 1180px;
+    height: 450px;
+}
+
+article{
+    float:left;
+    margin: 5px;
+    position: relative;
+}
+
+article p{
+    position: absolute;
+    color: white;
+}

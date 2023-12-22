@@ -1,61 +1,73 @@
-#header{
-    height: 120px;
+
+
+#main{
+    background: url(../Resources/Index/bg_main.png);
     width: 100%;
-    text-align: center;
-    margin-top: 33px;
+    height: 590px;
+    color: white;
 }
 
-#header a{
-    margin: 25px;
-    color: black;
-    font-weight: bold;
-    text-decoration-line: none;
+#main p{
+    font-size: 25px;
 }
-#header a:hover{
-    color: red;
-    text-decoration-line: underline;
-}
-#main_picture{
-    height: 464px;
-    text-align: center;
-}
-.icon_title_text{
-    text-align: center;
-}
-.icon_title_text strong{
-    font-size: large;
-}
-.icon_box{
-    width: 1240px;
-    text-align: center;
-    margin: 0 auto;
-}
-.icon_box div{
-    float: left;
-    height: 200px;
-    margin: 10px;
-}
-.icon_box p{
-    width: 250px;
-    height: 125px;
-    word-wrap: break-word;
+
+#main div{
     margin: auto;
-    padding: 0;
-    border-bottom: 5px dotted gray;
+    width: 800px;
+    height: 300px;
+    top: 150px;
+    position: relative;  
 }
-.chefs{
+
+#main #title{
+    font-size: 80px;
+}
+
+section{
+    width: 1180px;
+    height: 450px;
+    text-align: center;
+    margin: auto;
+}
+
+section article{
+    width: 295px;
+    float: left;
+    margin: auto;
+}
+
+section article p{
+    width: 230px;
+    margin: auto;
+    text-align: left;
+}
+
+footer{
     width: 100%;
-    height: 304px;
-    background-color: lightblue;
+    background: #020263;
+    color: gray;
 }
-.chefs div{
-    width: 814px;
-    height: 304px;
+
+footer div{
+    width: 1000px;
+    height: 100px;
     margin: auto;
 }
-.chefs div p{
-    width: 500px;
-    height: 100px;
+footer div h1{
+    left: 10px;
+    bottom: 15px;
     float: left;
-    margin: 50px 10px;
+}
+#foot_menu{
+    right: 20px;
+    bottom: 15px;
+    margin: auto;
+    float: right;
+}
+#foot_menu ul li{
+    float: left;
+    padding: 5px;
+    list-style-type: none;
+    border-left: 1px solid gray;
+    margin: 0px 10px;
 }
