@@ -1,66 +1,62 @@
-header{
-    width: 100%;
-    left: 10px;
-    bottom: 15px;
-    border-bottom: 1px solid black;
-    background: white;
+header {
+  width: 100%;
+  left: 10px;
+  bottom: 15px;
+  border-bottom: 1px solid black;
+  background: white;
+}
+header div {
+  width: 1180px;
+  height: 120px;
+  text-align: center;
+  margin: auto;
+}
+header div h1 {
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
+  float: left;
 }
 
-header div h1{
-    position: absolute;
-    left: 10px;
-    bottom: 15px;
-    float: left;
+.global {
+  right: 0px;
+  bottom: 0px;
+  float: right;
+  position: absolute;
 }
-header div{
-    width:1180px;
-    height:120px;
-    text-align: center;
-    margin: auto;
-}
-
-.global{
-    right: 0px;
-    bottom: 0px;
-}
-#global{
-    float: right;
-    position: absolute;
-    right:0px;
-    bottom: 0px;
-}
-#global li{
-    float: left;
-    padding: 5px;
-    list-style-type: none;
-    margin: 0px 30px;
+.global li {
+  float: left;
+  padding: 5px;
+  list-style-type: none;
+  margin: 0px 30px;
 }
 
-#utility{
-    float: right;
-    position: absolute;
-    right: 30px;
-    top : 20px;
+.utility {
+  float: right;
+  position: absolute;
+  right: 30px;
+  top: 20px;
 }
-#utility nav{
-    float: right;
+.utility nav {
+  float: right;
 }
-
-#utility ul li{
-    float: left;
-    padding: 5px;
-    list-style-type: none;
-}
-body{
-    font-family: verdana;
+.utility li {
+  float: left;
+  padding: 5px;
+  list-style-type: none;
 }
 
-a{
-    color: #000;
-    text-decoration-line: none;
+|body {
+  font-family: verdana;
 }
 
-a:hover{
-    color: blue;
-    text-decoration-line:underline;
+a {
+  color: #000;
+  text-decoration-line: none;
 }
+a:hover {
+  color: blue;
+  text-decoration-line: underline;
+}
+
+/*# sourceMappingURL=global.css.map */
