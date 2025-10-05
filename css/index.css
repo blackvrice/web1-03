@@ -8,11 +8,11 @@
   font-size: 25px;
 }
 .main div {
+  position: relative;
   margin: auto;
   width: 800px;
   height: 300px;
   top: 150px;
-  position: relative;
 }
 .main .title {
   font-size: 80px;

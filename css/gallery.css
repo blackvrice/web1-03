@@ -1,16 +1,16 @@
 header {
   position: fixed;
-  top: 0px;
+  top: 0;
   height: 120px;
   z-index: 1;
 }
 
 section {
   position: relative;
-  top: 120px;
   margin: auto;
+  top: 120px;
   width: 1180px;
-  height: 450px;
+  height: 500px -50;
 }
 
 article {

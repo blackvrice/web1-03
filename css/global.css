@@ -6,10 +6,20 @@ header {
   background: white;
 }
 header div {
+  position: relative;
   width: 1180px;
   height: 120px;
   text-align: center;
   margin: auto;
+}
+header div nav {
+  float: right;
+  position: absolute;
+}
+header div nav li {
+  float: left;
+  padding: 5px;
+  list-style-type: none;
 }
 header div h1 {
   position: absolute;
@@ -19,31 +29,13 @@ header div h1 {
 }
 
 .global {
-  right: 0px;
-  bottom: 0px;
-  float: right;
-  position: absolute;
-}
-.global li {
-  float: left;
-  padding: 5px;
-  list-style-type: none;
-  margin: 0px 30px;
+  right: 0;
+  bottom: 0;
 }
 
 .utility {
-  float: right;
-  position: absolute;
   right: 30px;
   top: 20px;
-}
-.utility nav {
-  float: right;
-}
-.utility li {
-  float: left;
-  padding: 5px;
-  list-style-type: none;
 }
 
 |body {

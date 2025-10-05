@@ -1,47 +1,41 @@
+@use "mixins";
+@use "variables";
 header{
   width: 100%;
-  left: 10px;
-  bottom: 15px;
+  left: variables.$left ; // 10px;
+  bottom: variables.$bottom;
   border-bottom: 1px solid black;
   background: white;
   div{
-    width:1180px;
-    height:120px;
+    position: relative;
+    width: variables.$max-width;
+    height: variables.$row-height + 20;
     text-align: center;
     margin: auto;
+    nav{
+      float: right;
+      position: absolute;
+      li{
+        float: left;
+        padding: 5px;
+        list-style-type: none;
+      }
+    }
     h1{
       position: absolute;
-      left: 10px;
-      bottom: 15px;
+      left: variables.$left;
+      bottom: variables.$bottom;
       float: left;
     }
   }
 }
 .global{
-  right: 0px;
-  bottom: 0px;
-  float: right;
-  position: absolute;
-  li{
-    float: left;
-    padding: 5px;
-    list-style-type: none;
-    margin: 0px 30px;
-  }
+  right: variables.$vector-zero;
+  bottom: variables.$vector-zero;
 }
 .utility{
-  float: right;
-  position: absolute;
-  right: 30px;
-  top : 20px;
-  nav{
-    float: right;
-  }
-  li{
-    float: left;
-    padding: 5px;
-    list-style-type: none;
-  }
+  right: variables.$vector * 6;
+  top : variables.$vector * 4;
 }
 |body{
   font-family: verdana;

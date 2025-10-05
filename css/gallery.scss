@@ -1,15 +1,17 @@
+@use "variables";
+@use "mixins";
+
 header{
   position: fixed;
-  top: 0px;
-  height: 120px;
+  top: variables.$vector-zero;
+  height: variables.$row-height + 20;
   z-index: 1;
 }
 section{
-  position: relative;
-  top: 120px;
-  margin: auto;
-  width: 1180px;
-  height: 450px;
+  @include mixins.relative;
+  top: variables.$vector * 24;
+  width: variables.$max-width;
+  height: (variables.$row-height * 5) -50;
 }
 
 article{
