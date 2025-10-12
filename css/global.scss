@@ -1,3 +1,6 @@
+@use "sass:list";
+@use "sass:map";
+@use "sass:math";
 @use "mixins";
 @use "variables";
 @use 'function';
@@ -8,25 +11,25 @@ header{
   border-bottom: function.border(1px, solid, black);
   background: white;
   div{
-    position: nth(variables.$position,2);
+    position: list.nth(variables.$position,2);
     width: variables.$max-width;
     height: variables.$row-height + 20;
-    text-align: nth(variables.$alignment,5);
+    text-align: list.nth(variables.$alignment,5);
     margin: variables.$margin-all;
     nav{
-      float: nth(variables.$alignment,3);
-      position: nth(variables.$position,3);
+      float: list.nth(variables.$alignment,2);
+      position: list.nth(variables.$position,3);
       li{
-        float: nth(variables.$alignment,2);
+        float: list.nth(variables.$alignment,1);
         padding: variables.$vector;
         list-style-type: none;
       }
     }
     h1{
-      position: nth(variables.$position,2);
+      position: list.nth(variables.$position,2);
       left: variables.$left;
       bottom: variables.$bottom;
-      float: nth(variables.$alignment,2);
+      float: list.nth(variables.$alignment,2);
     }
   }
 }
@@ -44,10 +47,10 @@ header{
 
 a{
   color: #000;
-  text-decoration-line: nth(variables.$textStyle,1);
+  text-decoration-line: list.nth(variables.$textStyle,1);
 
   &:hover{
     color: blue;
-    text-decoration-line: nth(variables.$textStyle,3);
+    text-decoration-line: list.nth(variables.$textStyle,3);
   }
 }

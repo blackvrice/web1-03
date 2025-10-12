@@ -1,3 +1,6 @@
+@use "sass:list";
+@use "sass:map";
+@use "sass:math";
 @use "mixins";
 @use "variables";
 @use "function";
@@ -25,25 +28,25 @@
 }
 
 header {
-  position: nth(variables.$position,1);
+  position: list.nth(variables.$position,1);
 }
 
 section {
   width: variables.$max-width;
   height: function.sizeCac(variables.$row-height,5, -50);
-  text-align: nth(variables.$alignment,5);
+  text-align: list.nth(variables.$alignment,5);
   margin: variables.$margin-all;
 
   article {
     width: function.sizeCac(variables.$col-width, 3, -5);
-    float: nth(variables.$alignment,1);
+    float: list.nth(variables.$alignment,1);
     margin: variables.$margin-all;
   }
 
   p {
     width: function.sizeCac(variables.$col-width,2,30);
     margin: variables.$margin-all;
-    text-align: nth(variables.$alignment,1);
+    text-align: list.nth(variables.$alignment,1);
 
   }
 }
@@ -61,7 +64,7 @@ footer {
     h1 {
       left: variables.$left;
       bottom: variables.$bottom;
-      float: nth(variables.$alignment,1);
+      float: list.nth(variables.$alignment,1);
     }
   }
 }
@@ -70,10 +73,10 @@ footer {
   right: function.sizeCac(variables.$vector,4);
   bottom: variables.$bottom;
   margin: variables.$margin-all;
-  float: nth(variables.$alignment,2);
+  float: list.nth(variables.$alignment,2);
 
   li {
-    float: nth(variables.$alignment,1);
+    float: list.nth(variables.$alignment,1);
     padding: variables.$vector;
     list-style-type: variables.$textStyle[0];
     border-left: function.border(1px,solid,gray);

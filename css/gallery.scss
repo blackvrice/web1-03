@@ -1,3 +1,6 @@
+@use "sass:list";
+@use "sass:map";
+@use "sass:math";
 @use "variables";
 @use "mixins";
 @use "function";
@@ -5,7 +8,7 @@
 
 
 header{
-  position: nth(variables.$position,3);
+  position: list.nth(variables.$position,3);
   top: variables.$vector-zero;
   height: function.sizeCac(variables.$row-height, 1 , 20);
   z-index: 1;
@@ -18,11 +21,11 @@ section{
 }
 
 article{
-  float: nth(variables.$alignment,1);
+  float: list.nth(variables.$alignment,1);
   margin: variables.$vector;
-  position: nth(variables.$position,2);
+  position: list.nth(variables.$position,2);
   p{
-    position: nth(variables.$position,3);
+    position: list.nth(variables.$position,3);
     color: white;
     margin: variables.$margin-all;
   }
