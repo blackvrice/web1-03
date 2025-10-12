@@ -1,0 +1,26 @@
+
+$col-width : 100px;
+$row-height : 100px;
+
+$max-width: ($col-width * 12) - 20px;
+
+$vector-zero : 0;
+$vector : 5px;
+$bottom : $vector * 3;
+$left : $vector * 2;
+
+$margin-left : $vector * 2;
+$margin-right : $vector * 2;
+$margin-top : $vector * 2;
+$margin-bottom: $vector * 2;
+$margin-all : auto;
+
+$proportion : 10%;
+
+$font : verdana;
+
+$alignment : left right top bottom center justify;
+
+$position : relative absolute fixed;
+
+$textStyle: none inherit underline;

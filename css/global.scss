@@ -11,14 +11,14 @@ header{
   border-bottom: function.border(1px, solid, black);
   background: white;
   div{
-    position: list.nth(variables.$position,2);
+    position: list.nth(variables.$position,1);
     width: variables.$max-width;
     height: variables.$row-height + 20;
     text-align: list.nth(variables.$alignment,5);
     margin: variables.$margin-all;
     nav{
       float: list.nth(variables.$alignment,2);
-      position: list.nth(variables.$position,3);
+      position: list.nth(variables.$position,2);
       li{
         float: list.nth(variables.$alignment,1);
         padding: variables.$vector;

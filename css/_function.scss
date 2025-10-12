@@ -1,0 +1,7 @@
+@function sizeCac($size, $multi : 1, $sum : 0) {
+  @return ($size * $multi) + $sum;
+}
+
+@function border($pixel, $style, $color) {
+  @return #{$pixel} #{$style} #{$color};
+}
