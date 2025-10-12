@@ -15,7 +15,7 @@
   top: 150px;
 }
 .main .title {
-  font-size: 80px;
+  font-size: 90px;
 }
 
 header {
@@ -64,9 +64,9 @@ footer div h1 {
 .foot_menu li {
   float: left;
   padding: 5px;
-  list-style-type: none;
+  list-style-type: none inherit underline [0];
   border-left: 1px solid gray;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 /*# sourceMappingURL=index.css.map */

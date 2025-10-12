@@ -1,80 +1,82 @@
 @use "mixins";
 @use "variables";
+@use "function";
+
 .main {
   background: url(../Resources/Index/bg_main.png);
-  width: 100%;
-  height: variables.$row-height * 6 - 10;
+  width: function.sizeCac(variables.$proportion, 10);
+  height: function.sizeCac(variables.$row-height, 6, -10);
   color: white;
 
   p {
-    font-size: 25px;
+    font-size: function.sizeCac(variables.$vector, 5);
   }
 
   div {
     @include mixins.relative;
-    width: variables.$col-width * 8;
-    height: variables.$row-height * 3;
-    top: 150px;
+    width: function.sizeCac(variables.$col-width , 8);
+    height: function.sizeCac(variables.$row-height, 3);
+    top: function.sizeCac(variables.$vector, 30);
   }
 
   .title {
-    font-size: 80px;
+    font-size: function.sizeCac(variables.$vector, 18);
   }
 }
 
 header {
-  position: relative;
+  position: nth(variables.$position,1);
 }
 
 section {
   width: variables.$max-width;
-  height: variables.$row-height * 5 - 50;
-  text-align: center;
-  margin: auto;
+  height: function.sizeCac(variables.$row-height,5, -50);
+  text-align: nth(variables.$alignment,5);
+  margin: variables.$margin-all;
 
   article {
-    width: variables.$col-width * 3 - 5;
-    float: left;
-    margin: auto;
+    width: function.sizeCac(variables.$col-width, 3, -5);
+    float: nth(variables.$alignment,1);
+    margin: variables.$margin-all;
   }
 
   p {
-    width: variables.$col-width * 2 + 30;
-    margin: auto;
-    text-align: left;
+    width: function.sizeCac(variables.$col-width,2,30);
+    margin: variables.$margin-all;
+    text-align: nth(variables.$alignment,1);
 
   }
 }
 
 footer {
-  width: 100%;
+  width: function.sizeCac(variables.$proportion, 10);
   background: #020263;
   color: gray;
 
   div {
-    width: variables.$col-width * 10;
+    width: function.sizeCac(variables.$col-width,10);
     height: variables.$row-height;
-    margin: auto;
+    margin: variables.$margin-all;
 
     h1 {
       left: variables.$left;
       bottom: variables.$bottom;
-      float: left;
+      float: nth(variables.$alignment,1);
     }
   }
 }
 
 .foot_menu {
-  right: variables.$vector * 4;
+  right: function.sizeCac(variables.$vector,4);
   bottom: variables.$bottom;
-  margin: auto;
-  float: right;
+  margin: variables.$margin-all;
+  float: nth(variables.$alignment,2);
 
   li {
-    float: left;
-    padding: 5px;
-    list-style-type: none;
-    border-left: 1px solid gray;
-    margin: 0px 10px;
+    float: nth(variables.$alignment,1);
+    padding: variables.$vector;
+    list-style-type: variables.$textStyle[0];
+    border-left: function.border(1px,solid,gray);
+    margin: variables.$vector-zero variables.$margin-top;
   }
 }

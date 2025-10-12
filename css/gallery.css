@@ -10,16 +10,16 @@ section {
   margin: auto;
   top: 120px;
   width: 1180px;
-  height: 500px -50;
+  height: 450px;
 }
 
 article {
   float: left;
   margin: 5px;
-  position: relative;
+  position: absolute;
 }
 article p {
-  position: absolute;
+  position: fixed;
   color: white;
   margin: auto;
 }

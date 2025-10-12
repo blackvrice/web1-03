@@ -1,26 +1,29 @@
 @use "variables";
 @use "mixins";
+@use "function";
+
+
 
 header{
-  position: fixed;
+  position: nth(variables.$position,3);
   top: variables.$vector-zero;
-  height: variables.$row-height + 20;
+  height: function.sizeCac(variables.$row-height, 1 , 20);
   z-index: 1;
 }
 section{
   @include mixins.relative;
-  top: variables.$vector * 24;
+  top: function.sizeCac(variables.$vector, 24);
   width: variables.$max-width;
-  height: (variables.$row-height * 5) -50;
+  height: function.sizeCac(variables.$row-height, 5 , -50);
 }
 
 article{
-  float:left;
-  margin: 5px;
-  position: relative;
+  float: nth(variables.$alignment,1);
+  margin: variables.$vector;
+  position: nth(variables.$position,2);
   p{
-    position: absolute;
+    position: nth(variables.$position,3);
     color: white;
-    margin:auto;
+    margin: variables.$margin-all;
   }
 }

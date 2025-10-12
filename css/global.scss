@@ -1,31 +1,32 @@
 @use "mixins";
 @use "variables";
+@use 'function';
 header{
-  width: 100%;
+  width: function.sizeCac(variables.$proportion, 10);
   left: variables.$left ; // 10px;
   bottom: variables.$bottom;
-  border-bottom: 1px solid black;
+  border-bottom: function.border(1px, solid, black);
   background: white;
   div{
-    position: relative;
+    position: nth(variables.$position,2);
     width: variables.$max-width;
     height: variables.$row-height + 20;
-    text-align: center;
-    margin: auto;
+    text-align: nth(variables.$alignment,5);
+    margin: variables.$margin-all;
     nav{
-      float: right;
-      position: absolute;
+      float: nth(variables.$alignment,3);
+      position: nth(variables.$position,3);
       li{
-        float: left;
-        padding: 5px;
+        float: nth(variables.$alignment,2);
+        padding: variables.$vector;
         list-style-type: none;
       }
     }
     h1{
-      position: absolute;
+      position: nth(variables.$position,2);
       left: variables.$left;
       bottom: variables.$bottom;
-      float: left;
+      float: nth(variables.$alignment,2);
     }
   }
 }
@@ -38,15 +39,15 @@ header{
   top : variables.$vector * 4;
 }
 |body{
-  font-family: verdana;
+  font-family: variables.$font;
 }
 
 a{
   color: #000;
-  text-decoration-line: none;
+  text-decoration-line: nth(variables.$textStyle,1);
 
   &:hover{
     color: blue;
-    text-decoration-line:underline;
+    text-decoration-line: nth(variables.$textStyle,3);
   }
 }
