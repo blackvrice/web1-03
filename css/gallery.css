@@ -16,12 +16,123 @@ section {
 article {
   float: left;
   margin: 5px;
-  position: absolute;
+  position: relative;
 }
 article p {
-  position: fixed;
+  position: absolute;
   color: white;
   margin: auto;
+}
+
+.article1 {
+  width: 700px;
+  height: 400px;
+}
+.article1 p {
+  bottom: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: white;
+}
+
+.article2 {
+  width: 290px;
+  height: 190px;
+}
+.article2 p {
+  top: 50px;
+  left: 10px;
+}
+
+.article3 {
+  width: 290px;
+  height: 95px;
+}
+.article3 p {
+  right: 10px;
+  bottom: 20px;
+}
+
+.article4 {
+  width: 500px;
+  height: 490px;
+}
+
+.article5 {
+  width: 490px;
+  height: 240px;
+}
+.article5 .paragraph1 {
+  width: 300px;
+  top: 160px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: black;
+}
+.article5 .paragraph2 {
+  right: 20px;
+  bottom: 30px;
+  font-size: 30px;
+  color: gold;
+}
+
+.article6 {
+  width: 1000px;
+  height: 370px;
+}
+.article6 .paragraph1 {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 50px;
+}
+.article6 .paragraph2 {
+  font-size: 20px;
+  width: 450px;
+  height: 250px;
+  right: 30px;
+  bottom: 40px;
+}
+.article6 .paragraph2 span {
+  font-size: 30px;
+}
+
+.image1 {
+  background-image: url("../Resources/gallery/700x400.png");
+}
+
+.image2 {
+  background-image: url("../Resources/gallery/290x190.png");
+}
+
+.image3 {
+  background-image: url("../Resources/gallery/290x95-1.png");
+}
+
+.image4 {
+  background-image: url("../Resources/gallery/290x95-2.png");
+}
+
+.image5 {
+  background-image: url("../Resources/gallery/490x240-1.png");
+}
+
+.image6 {
+  background-image: url("../Resources/gallery/490x240-2.png");
+}
+
+.image7 {
+  background-image: url("../Resources/gallery/500x490.png");
+}
+
+.image8 {
+  background-image: url("../Resources/gallery/1000x371.png");
+}
+
+.image9 {
+  background-image: url("../Resources/gallery/1000x361.png");
 }
 
 /*# sourceMappingURL=gallery.css.map */

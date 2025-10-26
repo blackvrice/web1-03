@@ -24,3 +24,16 @@ $alignment : left right top bottom center justify;
 $position : relative absolute fixed;
 
 $textStyle: none inherit underline;
+
+$imagePath : '../Resources/gallery';
+$imageUrl: (
+        "700x400.png",
+        "290x190.png",
+        "290x95-1.png",
+        "290x95-2.png",
+        "490x240-1.png",
+        "490x240-2.png",
+        "500x490.png",
+        "1000x371.png",
+        "1000x361.png"
+);

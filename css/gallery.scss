@@ -6,27 +6,119 @@
 @use "function";
 
 
-
-header{
-  position: list.nth(variables.$position,3);
+header {
+  position: list.nth(variables.$position, 3);
   top: variables.$vector-zero;
-  height: function.sizeCac(variables.$row-height, 1 , 20);
+  height: function.sizeCac(variables.$row-height, 1, 20);
   z-index: 1;
 }
-section{
+
+section {
   @include mixins.relative;
   top: function.sizeCac(variables.$vector, 24);
   width: variables.$max-width;
-  height: function.sizeCac(variables.$row-height, 5 , -50);
+  height: function.sizeCac(variables.$row-height, 5, -50);
 }
 
-article{
-  float: list.nth(variables.$alignment,1);
+article {
+  float: list.nth(variables.$alignment, 1);
   margin: variables.$vector;
-  position: list.nth(variables.$position,2);
-  p{
-    position: list.nth(variables.$position,3);
+  position: list.nth(variables.$position, 1);
+
+  p {
+    position: list.nth(variables.$position, 2);
     color: white;
     margin: variables.$margin-all;
   }
 }
+
+.article1 {
+  width: function.sizeCac(variables.$col-width, 7);
+  height: function.sizeCac(variables.$row-height, 4);
+
+  p {
+    bottom: function.sizeCac(variables.$vector, 2);
+    right: function.sizeCac(variables.$vector, 2);
+    font-size: function.sizeCac(variables.$vector, 6);
+    color: white;
+  }
+}
+
+.article2 {
+  width: function.sizeCac(variables.$col-width, 3, -10);
+  height: function.sizeCac(variables.$row-height, 2, -10);
+
+  p {
+    top: function.sizeCac(variables.$vector, 10);
+    left: function.sizeCac(variables.$vector, 2);
+  }
+}
+
+.article3 {
+  width: function.sizeCac(variables.$col-width, 3, -10);
+  height: function.sizeCac(variables.$row-height, 1, -5);
+
+  p {
+    right: function.sizeCac(variables.$vector, 2);
+    bottom: function.sizeCac(variables.$vector, 4);
+  }
+}
+
+.article4 {
+  width: function.sizeCac(variables.$col-width, 5);
+  height: function.sizeCac(variables.$row-height, 5, -10);
+}
+
+.article5 {
+  width: function.sizeCac(variables.$col-width, 5, -10);
+  height: function.sizeCac(variables.$row-height, 2, 40);
+
+  .paragraph1 {
+    width: function.sizeCac(variables.$col-width, 3);
+    top: function.sizeCac(variables.$vector, 32);
+    left: function.sizeCac(variables.$proportion, 5);
+    transform: translate(function.sizeCac(variables.$proportion, -5), 0);
+    color: black;
+  }
+
+  .paragraph2 {
+    right: function.sizeCac(variables.$vector, 4);
+    bottom: function.sizeCac(variables.$vector, 6);
+    font-size: function.sizeCac(variables.$vector, 6);
+    color: gold;
+  }
+}
+
+.article6 {
+  width: function.sizeCac(variables.$col-width, 10);
+  height: function.sizeCac(variables.$row-height, 4, -30);
+
+  .paragraph1 {
+    text-align: list.nth(variables.$alignment, 5);
+    top: function.sizeCac(variables.$proportion, 5);
+    left: function.sizeCac(variables.$proportion, 5);;
+    transform: translate(function.sizeCac(variables.$proportion, -5), function.sizeCac(variables.$proportion, -5));
+    width: function.sizeCac(variables.$proportion, 10);
+    font-size: function.sizeCac(variables.$vector, 10);
+  }
+
+  .paragraph2 {
+    font-size: function.sizeCac(variables.$vector, 4);
+    width: function.sizeCac(variables.$col-width, 5, -50);
+    height: function.sizeCac(variables.$col-width, 3, -50);
+    right: function.sizeCac(variables.$vector, 6);
+    bottom: function.sizeCac(variables.$vector, 8);
+
+    span {
+      font-size: function.sizeCac(variables.$vector, 6);
+    }
+  }
+}
+
+
+@for $i from 1 through 9 {
+  .image#{$i} {
+    background-image: url("#{variables.$imagePath}/#{list.nth(variables.$imageUrl, $i)}");
+  }
+}
+
