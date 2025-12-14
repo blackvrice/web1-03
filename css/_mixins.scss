@@ -1,6 +1,56 @@
 @use 'variables';
+@use 'function';
+@use 'sass:list';
+@use 'sass:map';
 
-@mixin relative{
+@mixin relative {
   position: relative;
-  margin : auto;
+  margin: auto;
+}
+
+@mixin article-size($conf) {
+  width: function.sizeCac(
+                  list.nth(map.get($conf, w), 1),
+                  list.nth(map.get($conf, w), 2),
+                  list.nth(map.get($conf, w), 3)
+  );
+
+  height: function.sizeCac(
+                  list.nth(map.get($conf, h), 1),
+                  list.nth(map.get($conf, h), 2),
+                  list.nth(map.get($conf, h), 3)
+  );
+}
+
+@mixin text-style($conf) {
+  @if map.has-key($conf, top) {
+    top: map.get($conf, top);
+  }
+  @if map.has-key($conf, right) {
+    right: map.get($conf, right);
+  }
+  @if map.has-key($conf, bottom) {
+    bottom: map.get($conf, bottom);
+  }
+  @if map.has-key($conf, left) {
+    left: map.get($conf, left);
+  }
+  @if map.has-key($conf, width) {
+    width: map.get($conf, width);
+  }
+  @if map.has-key($conf, height) {
+    height: map.get($conf, height);
+  }
+  @if map.has-key($conf, font-size) {
+    font-size: map.get($conf, font-size);
+  }
+  @if map.has-key($conf, color) {
+    color: map.get($conf, color);
+  }
+  @if map.has-key($conf, align) {
+    text-align: map.get($conf, align);
+  }
+  @if map.has-key($conf, transform) {
+    transform: map.get($conf, transform);
+  }
 }

@@ -29,8 +29,8 @@ article p {
   height: 400px;
 }
 .article1 p {
-  bottom: 10px;
   right: 10px;
+  bottom: 10px;
   font-size: 30px;
   color: white;
 }
@@ -48,10 +48,6 @@ article p {
   width: 290px;
   height: 95px;
 }
-.article3 p {
-  right: 10px;
-  bottom: 20px;
-}
 
 .article4 {
   width: 500px;
@@ -63,11 +59,11 @@ article p {
   height: 240px;
 }
 .article5 .paragraph1 {
-  width: 300px;
   top: 160px;
   left: 50%;
-  transform: translate(-50%, 0);
+  width: 300px;
   color: black;
+  transform: translate(-50%, 0);
 }
 .article5 .paragraph2 {
   right: 20px;
@@ -81,22 +77,19 @@ article p {
   height: 370px;
 }
 .article6 .paragraph1 {
-  text-align: center;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
   font-size: 50px;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
 .article6 .paragraph2 {
-  font-size: 20px;
-  width: 450px;
-  height: 250px;
   right: 30px;
   bottom: 40px;
-}
-.article6 .paragraph2 span {
-  font-size: 30px;
+  width: 450px;
+  height: 250px;
+  font-size: 20px;
 }
 
 .image1 {

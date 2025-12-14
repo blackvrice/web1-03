@@ -1,31 +1,33 @@
+@use 'function';
+@use 'sass:list';
 
-$col-width : 100px;
-$row-height : 100px;
+$col-width: 100px;
+$row-height: 100px;
 
 $max-width: ($col-width * 12) - 20px;
 
-$vector-zero : 0;
-$vector : 5px;
-$bottom : $vector * 3;
-$left : $vector * 2;
+$vector-zero: 0;
+$vector: 5px;
+$bottom: $vector * 3;
+$left: $vector * 2;
 
-$margin-left : $vector * 2;
-$margin-right : $vector * 2;
-$margin-top : $vector * 2;
+$margin-left: $vector * 2;
+$margin-right: $vector * 2;
+$margin-top: $vector * 2;
 $margin-bottom: $vector * 2;
-$margin-all : auto;
+$margin-all: auto;
 
-$proportion : 10%;
+$proportion: 10%;
 
-$font : verdana;
+$font: verdana;
 
-$alignment : left right top bottom center justify;
+$alignment: left right top bottom center justify;
 
-$position : relative absolute fixed;
+$position: relative absolute fixed;
 
 $textStyle: none inherit underline;
 
-$imagePath : '../Resources/gallery';
+$imagePath: '../Resources/gallery';
 $imageUrl: (
         "700x400.png",
         "290x190.png",
@@ -36,4 +38,95 @@ $imageUrl: (
         "500x490.png",
         "1000x371.png",
         "1000x361.png"
+);
+
+$articles: (
+        1: (
+                size: (
+                        w: ($col-width, 7, 0),
+                        h: ($row-height, 4, 0)
+                ),
+                texts: (
+                        p: (
+                                bottom: function.sizeCac($vector, 2),
+                                right: function.sizeCac($vector, 2),
+                                font-size: function.sizeCac($vector, 6),
+                                color: white
+                        )
+                )
+        ),
+        2: (
+                size: (
+                        w: ($col-width, 3, -10),
+                        h: ($row-height, 2, -10)
+                ),
+                texts: (
+                        p: (
+                                top: function.sizeCac($vector, 10),
+                                left: function.sizeCac($vector, 2)
+                        )
+                )
+        ),
+        3: (
+                size : (
+                        w: ($col-width, 3, -10),
+                        h: ($row-height, 1, -5)
+                )
+        ),
+        4: (
+                size : (
+                        w: ($col-width, 5, 0),
+                        h: ($row-height, 5, -10)
+                )
+        ),
+        5: (
+                size: (
+                        w: ($col-width, 5, -10),
+                        h: ($row-height, 2, 40)
+                ),
+                texts: (
+                        ".paragraph1": (
+                                width: function.sizeCac($col-width, 3),
+                                top: function.sizeCac($vector, 32),
+                                left: function.sizeCac($proportion, 5),
+                                transform: translate(
+                                                function.sizeCac($proportion, -5),
+                                                0
+                                ),
+                                color: black
+                        ),
+                        ".paragraph2": (
+                                right: function.sizeCac($vector, 4),
+                                bottom: function.sizeCac($vector, 6),
+                                font-size: function.sizeCac($vector, 6),
+                                color: gold
+                        )
+                )
+        ),
+        6: (
+                size: (
+                        w: ($col-width, 10, 0),
+                        h: ($row-height, 4, -30)
+                ),
+                texts: (
+                        ".paragraph1": (
+                                align: list.nth($alignment, 5),
+                                top: function.sizeCac($proportion, 5),
+                                left: function.sizeCac($proportion, 5),
+                                width: function.sizeCac($proportion, 10),
+                                font-size: function.sizeCac($vector, 10),
+                                transform: translate(
+                                                function.sizeCac($proportion, -5),
+                                                function.sizeCac($proportion, -5)
+                                )
+                        ),
+                        ".paragraph2": (
+                                font-size: function.sizeCac($vector, 4),
+                                width: function.sizeCac($col-width, 5, -50),
+                                height: function.sizeCac($col-width, 3, -50),
+                                right: function.sizeCac($vector, 6),
+                                bottom: function.sizeCac($vector, 8)
+                        )
+                )
+        )
 );
